@@ -1,0 +1,10 @@
+{
+  "name": "runna-web",
+  "private": true,
+  "type": "module",
+  "description": "No-build web build of the Runna clone. The \"type\": \"module\" field exists so `node --check` actually parses these files as ES modules instead of bailing on the first import and exiting 0.",
+  "scripts": {
+    "test": "node --test test/engine.test.mjs test/format.test.mjs",
+    "serve": "python3 -m http.server 8848"
+  }
+}
